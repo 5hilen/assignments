@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> javascript   </title>
+    <style>
+        h1{
+            text-align: center;
+            background-color: darkgrey;
+            border: 5px solid black;
+        }
+        h2{
+            text-align: center;
+            background-color: darkgrey;
+            border: 1px solid black;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Module (JAVASCRIPT BASIC & DOM)-4</h1>
+    
+    <h2>Assignment of javascripts</h2>
+
+    <h3>Q-1 What is JavaScript? </h3>
+    <ul>-javascript:-</ul>
+    <ul>-JavaScript is a scripting language that enables you to create dynamically updating content, control multimedia, animate images, and pretty much everything else.</ul>
+    <ul>-(Okay, not everything, but it is amazing what you can achieve with a few lines of JavaScript code.)</ul>
+
+    <h3>Q-2 What is the use of isNaN function?</h3>
+    <ul>-The isNaN() function determines whether a value is NaN when converted to a number. Because coercion inside the isNaN() function can be surprising, you may alternatively want to use Number.isNaN()</ul>
+
+    <h3>Q-3  What is negative Infinity?</h3>
+    <ul>-NEGATIVE_INFINITY:-</ul>
+    <ul>-NEGATIVE_INFINITY is a special numeric value that is returned when an arithmetic operation or mathematical function generates a negative value greater than the largest representable number in JavaScript.</ul>
+    <ul>-(i.e., more negative than -Number. MAX_VALUE) . JavaScript displays the NEGATIVE_INFINITY value as -Infinity .</ul>
+
+    <h3>Q-4 Which company developed JavaScript? </h3>
+    <ul>-Netscape Communications  --  JavaScript was created at Netscape Communications by Brendan Eich in 1995.</ul>
+
+    <h3>Q-5 What are undeclared and undefined variables?</h3>
+    <ul>-Undeclared variables are those that have not been declared or defined in the current scope.</ul>
+    <ul>-Undefined variables are those that have been declared but not given a value. Understanding the difference between these two terms is crucial for writing correct and effective JavaScript code.</ul>
+
+    <h3>Q-6 Write the code for adding new elements dynamically? </h3>
+    <ul>-The createElement() method in JavaScript can be used to create new items dynamically.</ul>
+    <ul>-The setAttribute() method is used to set the attributes of the newly generated element. By clicking a button, a modal box appears and collects the required information dynamically.</ul>
+
+    <h3>Q-7 What is the difference between ViewState and SessionState? </h3>
+    <ul>- ViewState :-</ul>
+    <ul>1.Maintained at page level only</ul>
+    <ul>2.View state can only be visible from a single page and not multiple pages.</ul>
+    <ul>3.It will retain values in the event of a postback operation occurring.</ul>
+    <ul>4.Information is stored on the client’s end only.</ul>
+    <ul>5.used to allow the persistence of page-instance-specific data.</ul>
+    <ul>6.ViewState values are lost/cleared when new page is loaded.</ul>
+    <ul>- SessionState:-</ul>
+    <ul>1.Maintained at session level.</ul>
+    <ul>2.Session state value availability is across all pages available in a user session.</ul>
+    <ul>3.In session state, user data remains in the server. Data is available to user until the browser is closed or there is session expiration.</ul>
+    <ul>4.Information is stored on the server.</ul>
+    <ul>5.used for the persistence of user-specific data on the server’s end.</ul>
+    <ul>6.SessionState can be cleared by programmer or user or in case of timeouts.</ul>
+
+    <h3>Q-8 What is === operator?</h3>
+    <ul>-The strict equality (===) operator checks whether its two operands are equal, returning a Boolean result. Unlike the equality operator, the strict equality operator always considers operands of different types to be different.</ul>
+
+    <h3>Q-9 How can the style/class of an element be changed? </h3>
+    <ul>-Another way to alter the style of an element is by changing its class attribute. class is a reserved word in JavaScript, so in order to access the element's class, you use element. className .</ul>
+
+    <h3>Q-10 How to read and write a file using JavaScript? </h3>
+    <ul>1.file=fopen(getScriptPath(),0); The function fread() is used for reading the file content.</ul>
+    <ul>2.str = fread(file,flength(file) ; The function fwrite() is used to write the contents to the file.</ul>
+    <ul>3.file = fopen("c:\MyFile.txt", 3);// opens the file for writing.</ul>
+
+    <h3>Q-11  What are all the looping structures in JavaScript?  </h3>
+    <ul>-for - loops through a block of code a number of times</ul>
+    <ul>-for/in - loops through the properties of an object</ul>
+    <ul>-for/of - loops through the values of an iterable object</ul>
+    <ul>-while - loops through a block of code while a specified condition is true</ul>
+    <ul>-do/while - also loops through a block of code while a specified condition is true</ul>
+
+    <h3>Q-12 How can you convert the string of any base to an integer in JavaScript? </h3>
+    <ul>-To convert a string to an integer parseInt(), Number(), and Unary operator(+) function is used in javascript. parseInt() function returns Nan( not a number) when the string doesn't contain number.</ul>
+    <ul>-If a string with a number is sent, then only that number will be returned as the output.</ul>
+
+    <h3>Q-13 What is the function of the delete operator?  </h3>
+    <ul>-The delete operator removes a property from an object. If the property's value is an object and there are no more references to the object, the object held by that property is eventually released automatically.</ul>
+    
+    <h3>Q-14 What are all the types of Pop up boxes available in JavaScript? </h3>
+    <ul>-JavaScript has three kind of popup boxes: Alert box, Confirm box, and Prompt box.</ul>
+
+    <h3>Q-15  What is the use of Void (0)?  </h3>
+    <ul>-JavaScript void 0 means returning undefined (void) as a primitive value. You might come across the term “JavaScript:void(0)” while going through HTML documents. </ul>
+       <ul> It is used to prevent any side effects caused while inserting an expression in a web page.</ul>
+    
+    <h3>Q-16 How can a page be forced to load another page in JavaScript? </h3>   
+    <ul>-In JavaScript, we can use window. location object to force a page to load another page. We can use the location object to set the URL of a new page.</ul>
+
+    <h3>Q-17  What are the disadvantages of using innerHTML in JavaScript?  </h3>
+    <ul>-Disadvantages of innerHTML</ul>
+    <ul>  -Event handlers attached to any DOM element are preserved.</ul>
+    <ul>  -Replacement is done everywhere.</ul>
+    <ul>- It is not possible to append innerHTML.</ul>
+    <ul>  -Breaks the document.</ul>
+    <ul> -Used for Cross-site Scripting.</ul>
+
+
+    <h1>Module (JQuery Basic, Effects & Advanced) 5 </h1>
+    
+    <h3>Q-1  What is jQuery? </h3>
+    <ul>-jQuery is a lightweight, "write less, do more", JavaScript library.</ul>
+    <ul>-The purpose of jQuery is to make it much easier to use JavaScript on your website.</ul>
+    <ul>-jQuery takes a lot of common tasks that require many lines of JavaScript code to accomplish, and wraps them into methods that you can call with a single line of code.</ul>
+    <ul>-jQuery also simplifies a lot of the complicated things from JavaScript, like AJAX calls and DOM manipulation.</ul>
+    <ul>-The jQuery library contains the following features:-</ul>
+    <ul>1.HTML/DOM manipulation</ul>
+    <ul>2.CSS manipulation</ul>
+    <ul>3.HTML event methods</ul>
+    <ul>4.Effects and animations</ul>
+    <ul>5.AJAX</ul>
+    <ul>6.Utilities</ul>
+
+    <h3>Q-2 How to Apply CSS Using JQuery, How to Add Class and Remove Class in Jquery , JQuery Animation? </h3>
+    <ul>-jQuery - Get and Set CSS Classes</ul>
+    <ul>-addClass() - Adds one or more classes to the selected elements.</ul>
+    <ul>-removeClass() - Removes one or more classes from the selected elements.</ul>
+    <ul>-toggleClass() - Toggles between adding/removing classes from the selected elements.</ul>
+    <ul>-css() - Sets or returns the style attribute.</ul>
+
+    <h3>Q-3 How to create slider with animation?</h3>
+    <ul>-Step 1: Come up with a strategy for the slider. You can make as many modifications as you want to Slider Revolution templates.</ul>
+    <ul>-Step 2: Update the background image in each slide.</ul>
+    <ul>-Step 3: Update the text layers in each slide.</ul>
+    <ul>-Step 4: Edit the button text and design in each slide.</ul>
+    <ul>-Step 5: Edit the slider navigation.</ul>
+
+
+    
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstr</title>
+    <style>
+        h1{
+            background-color: darkgray;
+            text-align: center;
+            border: 5px solid black;
+        }
+
+        .card{
+            text-align: center;
+            font-size: 40px;
+            border: 2px solid black;
+        }
+        .maindiv{
+            height: 350px;
+            width: 250px;
+            background-color:;
+            margin: auto;
+        }
+        .photoid{
+            height: 250px;
+            width: auto;
+            background-color:rgb(142, 140, 140);
+           
+        }
+        .p1{
+            text-align: center;
+            padding-top: 125px;
+            font-size: 25px;
+            
+        }
+        .nameid{
+            height: 100px;
+            width: auto;
+            background-color: rgb(203, 203, 203);
+            padding-left:  20px;
+            padding-top: 20px;
+
+
+        }
+        button{
+            background-color: blue;
+            border-radius: 3px;
+            color: white;
+        }
+        .p2{
+            margin: 0;
+        }
+      
+       
+        
+    </style>
+</head>
+<body>
+
+    <h1>Module (Bootstrap Basic & Advanced)6</h1>
+
+    <h3>Q-1 What are the advantages of Bootstrap? </h3>
+    <ul>-Bootstrap is the most popular HTML, CSS and JavaScript framework for developing a responsive and mobile friendly website. It is absolutely free to download and use.</ul>
+    <ul> It is a front-end framework used for easier and faster web development.</ul>
+
+    <h3>Q-2 What is a Bootstrap Container, and how does it work? </h3>
+    <ul>-Containers are the most basic layout element in Bootstrap and are required when using our default grid system.</ul>
+    <ul>-Containers are used to contain, pad, and (sometimes) center the content within them. While containers can be nested, most layouts do not require a nested container.</ul>
+
+    <h3>Q-3 What are the default Bootstrap text settings?</h3>
+    <ul>- default font-size of 16px, and its line-height is 1.5. </ul>
+    <ul>-The default font-family is "Helvetica Neue", Helvetica, Arial, sans-serif. In addition, all --p-- elements have margin-top: 0 and margin-bottom: 1rem (16px by default).</ul>
+
+    <h3>Q-4 What do you know about the Bootstrap Grid System? </h3>
+    <ul>-Bootstrap's grid system uses a series of containers, rows, and columns to layout and align content. </ul>
+    <ul>-It's built with flexbox and is fully responsive. Below is an example and an in-depth look at how the grid comes together. New to or unfamiliar with flexbox.</ul>
+
+    <h3>Q-5  What is the difference between Bootstrap 4 and Bootstrap 5 </h3>
+    <ul>Bootstrap 4</ul>
+    <ul>Grid System:-It has 5 tier (xs, sm, md, lg, xl).</ul>
+    <ul>Color:-	It has limited colors.</ul>
+    <ul>Jquery:-It has jquery and all related plugins.</ul>
+    <ul>-Internet Explorer:-Bootstrap 4 supports both IE 10 and 11.</ul>
+    <ul>-Form elements:-Radio buttons, checkboxes have different look in different OS and browsers. The form uses whatever default browsers provide.</ul>
+    <ul>-Utilities API:-We cannot modify utilities in bootstrap 4</ul>
+    <ul>-Gutter:-We use .glutter with fontsize in px</ul>
+    <ul>-Vertical Classes:-	Columns can be positioned relative</ul>
+    <ul>-Bootstrap Icons:-Bootstrap 4 doesn't have its own SVG icons, we have to use font-awesome for icons.</ul>
+    <ul>-Jumbotron:-It supports.</ul>
+    <ul>-Card deck:-The card deck is used to create a set of cards with equal width and height.</ul>
+    <ul>-Navbar:-We have inline-block property and we will get white dropdown as default for dropdown-menu-dark class.</ul>
+    <ul>-Static Site Generator:-Bootstrap 4 uses Jekyll software.</ul>
+    <ul>-flexbox grid:-this makes easier to implement vertical designs, and the columns and rows can easily be implemented. the classes justify-center-content can directly be used to align according to the requirement.</ul>
+    <ul>-RTL Support:-	It does not enable RTL(Right to Left) switching.</ul>
+    <ul>-Offcanvas Component:-It does not support Offcanvas Component.</ul>
+    <ul>Bootstrap 5</ul>
+    <ul>-Grid System:-It has 6 tier (xs, sm, md, lg, xl, xxl).</ul>
+    <ul>-Color:-Extra colors added with the looks, A card improved color palette. there are various shades available to choose.</ul>
+    <ul>-Jquery:-Jquery is removed and switched to vanilla JS with some working plugins</ul>
+    <ul>-Internet Explorer:-Bootstrap 5 doesn't support IE 10 and 11.</ul>
+    <ul>-Form elements:-The look of form elements will not change, on different OS or browser. The forms can be customized and form controls can be added, they would not depend on browser. </ul>
+    <ul>-Utilities API:-Bootstrap 5 gave freedom to modify and also create our own utility</ul>
+    <ul>-Gutter:-We use .g* with fontsize in rem</ul>
+    <ul>-Vertical Classes:-Columns cannot be positioned relative.</ul>
+    <ul>-Bootstrap Icons:-Bootstrap 5 have its own SVG icons</ul>
+    <ul>-Jumbotron:-It doesn't support jumbotron.</ul>
+    <ul>-Card deck:-Card deck class in removed in bootstrap.</ul>
+    <ul>-Navbar:-Inline-block property is removed and we will get black dropdown as default for dropdown-menu-dark class.</ul>
+    <ul>-Static Site Generator:-Bootstrap 5 uses Hugo software as it is fast static site generator.</ul>
+    <ul>-flexbox grid:-sadvanced grid system is made available , also columns don't have relative positions.</ul>
+    <ul>-RTL Support:-It enables RTL(Right to Left) switching.</ul>
+    <ul>-Offcanvas Component:-It supports Offcanvas Component(that is it is available now).</ul>
+
+    <h3>Q-6 What is a Button Group, and what is the class for a basic Button Group?</h3>
+    <ul>-Button groups allow multiple buttons to be stacked together on a single line. </ul>
+    <ul>-This is useful when you want to place items like alignment buttons together. You can add on optional JavaScript radio and checkbox style behavior with Bootstrap Button Plugin. This class is used for a basic button group.</ul>
+
+    <h3>Q-7 How can you use Bootstrap to make thumbnails?</h3>
+    <ul>Bootstrap - Thumbnails</ul>
+    <ul>-Add an --a-- tag with the class of . thumbnail around an image.</ul>
+    <ul>-This adds four pixels of padding and a gray border.</ul>
+    <ul>-On hover, an animated glow outlines the image.</ul>
+
+    <h3>Q-8 In Bootstrap 4, what is flexbox?</h3>
+    <ul>-Flexbox. The biggest difference between Bootstrap 3 and Bootstrap 4 is that Bootstrap 4 now uses flexbox, instead of floats, to handle the layout.</ul>
+    <ul>-The Flexible Box Layout Module, makes it easier to design flexible responsive layout structure without using float or positioning.</ul>
+
+    <h3>Q-9 How can one create an alert in Bootstrap? </h3>
+    <ul>-Alerts are created with the .alert class, followed by one of the four contextual classes .alert-success, .alert-info, .alert-warning or .alert-danger:</ul>
+
+    <h3  class="card">Q-10 What is a bootstrap card and how would you create one?</h3>
+
+
+    <div class="maindiv">
+        <div class="photoid">
+           <p class="p1"> PHOTO ID</p>
+
+
+        </div>
+        <div class="nameid">
+            <div class="m">
+
+             <p class="p2"> SABVA SHILEN</p>
+                    
+                   <p class="p3"> Web Desinger</p>
+                    
+                <p class="p4"> <button>profile</button></p>
+                
+                    
+                    
+                
+            </div>
+
+        
+
+        </div>
+    </div>
+    
+    
+
+
+
+
+
+      
+    
+</body>
+</html>

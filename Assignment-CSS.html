@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS and CSS 3</title>
+    <style>
+        
+        *{
+            margin-top: 0px;
+        }
+        .containar1{
+        display: flex;
+        }
+        .maincontainar{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            width: 60%;
+           margin: auto 150px;
+            column-gap: 20px;
+            row-gap: 20px   ;
+            
+        }
+        
+      h1{
+            background-color: darkgrey;
+            text-align: center;
+            font-size: 60px;
+            border: 2px solid black;
+        }
+        h2{
+            text-align: center;
+            background-color: darkgray;
+            font-size: 40px;
+            border: 2px solid black;
+        }
+        .box1{
+            height: 250px ;
+            width:400px;
+            background-color: darkgray;
+            border-top: 1px solid black;
+            border-left: 1px solid black;
+            border-right: 1px solid black;
+        }
+        .box1 p{
+            text-align: center;
+            padding-top: 100px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+            font-size: 30px;
+        }
+        .box01{
+            height:120px;
+            width: 390px;
+            background-color: white;
+            padding-top: 5px;
+            padding-left: 10px;
+            font-size: 20px;
+            border-left: 1px solid black;
+            border-right: 1px solid black;
+            border-bottom: 1px solid black;
+        }
+      input{
+            margin-top: 15px;
+            padding: 5px 10px 5px 10px;
+            background-color: white;
+            border: 1px solid black;
+        }
+        span{
+            margin-left: 220px;
+        }
+        .module h1{
+            background-color: darkgray;
+            text-align: center;
+            font-size: 40px;
+        }
+        
+      
+   
+    </style>
+</head>
+<body>
+    <h1>Assignment-CSS and CSS 3</h1>
+    <br>
+    <h3>Q-1 What are the benefits of using CSS? </h3>
+    <ul> -CSS-CSS is to beutify our HTML Document. </ul>
+    <ul> -CSS is used  used for beautification of our Web page with help of its different properties like color, font, background, display, position etc.</ul>
+    <ul> -CSS- With the help of CSS we can make animation, give hovering effect to element like button, image etc.</ul>
+    <br>
+    <h3>Q-2 What are the disadvantages of CSS?</h3>
+    <ul> -Confusion due to many CSS levels. Beginners are more vulnerable to this issue.</ul>
+    <ul> -Cross-Browser Issues. Different browsers work differently.</ul>
+    <ul> -Security Issues. Security is important in today's world driven by technology and data.</ul>
+    <ul> -Extra Work for Developers.</ul>
+    <br>
+    <h3>Q-3 What is the difference between CSS2 and CSS3?</h3>
+    <li>-CSS2</li>
+    <ul>-CSS splits up different sections of the code into modules,</ul>
+    <ul>-There are new ways you can write CSS rules with a bunch of CSS selectors.</ul>
+    <ul>-There is no backward compatibility with CSS2.</ul>
+    <ul>-With CSS2 only web safe fonts can be used.</ul>
+    <ul>-With CSS2 the concept of simple selectors were present.</ul>
+    <ul>-Using CSS2, for rounded borders, coding the css styles were complex.</ul>
+    <ul>-CSS 2, splitting text into multiple columns required complex coding because the standard was not equipped enough to break the text into columns so that it would fit into a box.</ul>
+    <ul>-CSS 2 Doesn't support the Border- Box property.</ul>
+    <li>-CSS-3</li>
+    <ul>-Both CSS and HTML were put into a single file, there was no concept of modules before.</ul>
+    <ul>-There were no new ways of writing the CSS rules.</ul>
+    <ul>-There is backward compatibility maintained with CSS 3.</ul>
+    <ul>-With CSS3 special fonts can be used such as those in Google Fonts and TypeCast</ul>
+    <ul>-With CSS3 the selectors were called as a sequence of simple seletors.com</ul>
+    <ul>-With CSS3, there is provision for automatically assigning rounded borders to objects21.</ul>
+    <ul>-CSS3 has the capability to split text into various columns so that each text block appears as a layout of the newspaper.</ul>
+    <ul>-CSS3 supports the Border-Box property.</ul>
+    <br>
+    <h3>Q-4 Name a few CSS style components.</h3>
+    <ul> -Properties: These are human-readable identifiers that indicate which stylistic features you want to modify. For example, font-size , width , background-color.</ul>
+    <ul> -Values: Each property is assigned a value. This value indicates how to style the property</ul>
+    <br>
+    <h3>Q-5 What do you understand by CSS opacity?</h3>
+    <ul>-The opacity CSS property sets the opacity of an element. Opacity is the degree to which content behind an element is hidden, and is the opposite of transparency.</ul>
+    <br>
+    <h3>Q-6 How can the background color of an element be changed? </h3>
+    <ul>-To add background color in HTML, use the CSS background-color property. Set it to the color name or code you want and place it inside a style attribute. Then add this style attribute to an HTML element, like a table, heading, div, or span tag.</ul>
+    <br>
+    <h3>Q-7 How can image repetition of the backup be controlled?</h3>
+    <ul>-In this article, we will see how an image repetition of the backup is controlled in CSS. This task can be achieved by using the background-repeat property that will help us to control the repetition of the image.</ul>
+    <ul>-The background-repeat property in CSS is used to repeat the background image both horizontally and vertically. It also decides whether the background image will be repeated or not.</ul>
+    <br>
+    <h3>Q-8 What is the use of the background-position property? </h3>
+    <li>-The background-position CSS property sets the initial position for each background image. The position is relative to the position layer set by </li>
+    <br>
+    <ul>-background-position: top;</ul>
+    <ul>-background-position: left;</ul>
+    <ul>-background-position: center;</ul>
+    <ul>-background-position: 25% 75%;</ul>
+    <ul>-background-position: bottom 50px right 100px;</ul>
+    <ul>-background-position: right 35% bottom 45%;</ul>
+    <br>
+    <h3>Q-9 Which property controls the image scroll in the background?</h3>
+    <li>-The background-attachment CSS property sets whether a background image's position is fixed within the viewport, or scrolls with its containing block.</li>
+    <br>
+    <ul>-background-attachment: scroll;</ul>
+    <ul>-background-attachment: fixed;</ul>
+    <ul>-background-attachment: local;</ul>
+    <ul>-background-attachment: local, scroll;</ul>
+    <ul>-background-attachment: scroll, local;</ul>
+    <br>
+    <h3>Q-10 Why should background and color be used as separate properties?</h3>
+    <li>-There are two reasons behind this:-</li>
+    <br>
+    <ul>-It enhances the legibility of style sheets. The background property is a complex property in CSS, and if it is combined with color, the complexity will further increase.</ul>
+    <ul>-Color is an inherited property while the background is not. So this can make confusion further.</ul>
+    <br>
+    <h3>Q-11 How to center block elements using CSS1?</h3>
+    <ul>-To horizontally center a block element (like div), use margin: auto;</ul>
+    <ul>-Setting the width of the element will prevent it from stretching out to the edges of its container.</ul>    
+    <br>
+    <h3>Q-12 How to maintain the CSS specifications?</h3>
+    <li>-CSS specifications:-</li>
+    <br>
+    <ul> -MEDIA QUERIES </ul>
+    <ul> -SELECTORS LEVEL </ul>
+    <ul> -CSS GRID TEMPLATE LAYOUT </ul>
+    <ul> -CSS AURAL STYLE SHEETS </ul>
+    <ul> -CSS BACKGROUNDS AND BORDERS LEVEL </ul>
+    <ul> -CSS BASIC USER INTERFACE </ul>
+    <ul> -CSS BASIC BOX MODEL </ul>
+    <ul> -CSS BASIC BOX MODEL LEVEL </ul>
+    <ul> -CSS CASCADING AND INHERITANCE LEVEL </ul>
+    <ul> -CSS COLOR </ul>
+    <ul> -CSS FONTS LEVEL </ul>
+    <ul> -CSS GENERATED CONTENT FOR PAGED MEDIA </ul>
+    <ul> -CSS MULTI-COLUMN LAYOUT </ul>
+    <ul> -CSS PAGED MEDIA </ul>
+    <ul> -CSS READER MEDIA TYPE </ul>
+    <ul> -CSS SCOPING </ul>
+    
+    <br>
+    
+    <h3>Q-13 What are the ways to integrate CSS as a web page? </h3>
+    <br>
+    <li>-CSS can be added to HTML documents in 3 ways:</li>
+    <br>
+    <ul>-1.Inline - by using the style attribute inside HTML elements.</ul>
+    <ul>-2.Internal - by using a style, element, in the head, section.</ul>
+    <ul>-3.External - by using a link element to link to an external CSS file.</ul>
+    <br>
+    <h3>Q-14 What is embedded style sheets?</h3>
+    <ul>-Embedded Stylesheet: It allows you to define styles for a particular HTML document as a whole in one place. This is done by embedding the [style-style] tags containing the CSS properties in the head of your document.</ul>
+    <br>
+    <h3>Q-15 What are the external style sheets?</h3>
+    <ul>-An external style sheet is a separate CSS file that can be accessed by creating a link within the head section of the webpage. Multiple webpages can use the same link to access the stylesheet.</ul>
+    <h3>Q-16 What are the advantages and disadvantages of using external style sheets?</h3>
+    <br>
+    <li>-The advantages of External Style Sheets are as:-</li>
+    <br>
+    <ul>-With the help of External Style Sheets, the styles of numerous documents can be organized from one single file.</ul>
+    <ul>-In External Style Sheets, Classes can be made for use on numerous HTML element types in many forms of the site.</ul>
+    <ul>-In complex contexts, Methods like selector and grouping can be implemented to apply styles.</ul>
+    <br>
+    <li>-The disadvantages of External Style Sheets are as:-</li>
+    <br>
+    <ul>-An extra download is essential to import style information for each file.</ul>
+    <ul>-The execution of the file may be deferred till the external style sheet is loaded.</ul>
+    <ul>-While implementing style sheets, we need to test Web pages with multiple browsers in order to check compatibility issues.</ul>
+    <br>
+    <h3>Q-17 What is the meaning of the CSS selector?</h3>
+    <li>-A CSS selector is the first part of a CSS Rule. It is a pattern of elements and other terms that tell the browser which HTML elements should be selected to have the CSS property values inside the rule applied to them.</li>
+    <br>
+    <h3>Q-18 What are the media types allowed by CSS?</h3>
+    <br>
+   <li>-all</li>
+        <ul> -Suitable for all devices.</ul>
+   <li>-braille</li>
+        <ul> -Intended for braille tactile feedback devices.</ul>
+   <li>-embossed</li>
+        <ul> -Intended for paged braille printers.</ul>
+   <li>-handheld</li>
+        <ul> -Intended for handheld devices (typically small screen, limited bandwidth).</ul>
+   <li>-print</li>
+        <ul> -Intended for paged material and for documents viewed on screen in print preview mode. Please consult the section on paged media for information about formatting issues that are specific to paged media.</ul>
+   <li>-projection</li>
+        <ul> -Intended for projected presentations, for example projectors. Please consult the section on paged media for information about formatting issues that are specific to paged media.</ul>
+   <li>-screen</li>
+        <ul> -Intended primarily for color computer screens.</ul>
+   <li>-speech</li>
+        <ul> -Intended for speech synthesizers. Note: CSS2 had a similar media type called 'aural' for this purpose. See the appendix on aural style sheets for details.</ul>
+   <li>-tty</li>
+        <ul> -Intended for media using a fixed-pitch character grid (such as teletypes, terminals, or portable devices with limited display capabilities). Authors should not use pixel units with the "tty" media type.</ul>
+   <li>-tv</li>
+        <ul> -Intended for television-type devices (low resolution, color, limited-scrollability screens, sound available).</ul>
+      <br>  
+    <h3>Q-19 What is the rule set? </h3>
+    <ul>-A collection of rules or signatures that network traffic or system activity is compared against to determine an action to take such as forwarding or rejecting a packet, creating an alert, or allowing a system event.</ul>
+    <br>
+    <h2>Q-20 Create Layout</h2>
+
+     <div class="maincontainar">
+    <div class="containar">
+        <div class="box1">
+                <p>Thumbnail</p>
+      </div>
+
+      <div class="box01">
+                This is a winder card with supporting text <br>
+                bekaw as a natural leand in to additional <br>  
+                content. this contenat is a little bit longer.
+                <br>
+              <input type="button" value="View"><input type="button" value="Exit">
+            <span>layout</span>
+        </div>
+    </div>
+    <div class="containar">
+        <div class="box1">
+                <p>Thumbnail</p>
+      </div>
+
+      <div class="box01">
+                This is a winder card with supporting text <br>
+                bekaw as a natural leand in to additional <br>  
+                content. this contenat is a little bit longer.
+                <br>
+              <input type="button" value="View"><input type="button" value="Exit">
+            <span>layout</span>
+        </div>
+    </div>
+    <div class="containar">
+        <div class="box1">
+                <p>Thumbnail</p>
+      </div>
+
+      <div class="box01">
+                This is a winder card with supporting text <br>
+                bekaw as a natural leand in to additional <br>  
+                content. this contenat is a little bit longer.
+                <br>
+              <input type="button" value="View"><input type="button" value="Exit">
+            <span>layout</span>
+        </div>
+    </div>
+    <div class="containar">
+        <div class="box1">
+                <p>Thumbnail</p>
+      </div>
+
+      <div class="box01">
+                This is a winder card with supporting text <br>
+                bekaw as a natural leand in to additional <br>  
+                content. this contenat is a little bit longer.
+                <br>
+              <input type="button" value="View"><input type="button" value="Exit">
+            <span>layout</span>
+        </div>
+    </div>
+    <div class="containar">
+        <div class="box1">
+                <p>Thumbnail</p>
+      </div>
+
+      <div class="box01">
+                This is a winder card with supporting text <br>
+                bekaw as a natural leand in to additional <br>  
+                content. this contenat is a little bit longer.
+                <br>
+              <input type="button" value="View"><input type="button" value="Exit">
+            <span>layout</span>
+        </div>
+    </div>
+    <div class="containar">
+        <div class="box1">
+                <p>Thumbnail</p>
+      </div>
+
+      <div class="box01">
+                This is a winder card with supporting text <br>
+                bekaw as a natural leand in to additional <br>  
+                content. this contenat is a little bit longer.
+                <br>
+              <input type="button" value="View"><input type="button" value="Exit">
+            <span>layout</span>
+        </div>
+    </div>
+    </div>
+    <br>
+    <br>
+    <br>
+
+    <div class="module">
+        <h1>Module (HTML5)-3</h1>
+    </div>
+    <br>
+    <br>
+    <h3>Q-1 What are the new tags added in HTML5?</h3>
+    <li>-New teg added element:-</li>
+    <br>
+    <ul>--(MOVED) article
+        --(MOVED) aside
+        --audio
+        --canvas
+        --command
+        --datalist
+        --details
+        --embed
+        --figcaption
+        --figure
+        --footer
+        --header
+        --hgroup
+        --keygen
+        --mark
+        --math
+        --meter
+        --nav
+        --output
+        --progress
+        --rp
+        --rt
+        --ruby
+        --section
+        --source
+        --summary
+        --svg
+        --time
+        --track
+        --video
+        --wbr</ul>
+<h3>Q-2 How to embed audio and video in a webpage? </h3>
+<li>-The HTML5 -audio- and -video- tags make it simple to add media to a website. You need to set src attribute to identify the media source and include a controls attribute so the user can play and pause the media.</li>
+<br>
+<h3>Q-3 Semantic element in HTML5?</h3>
+<li>-Semantic element:-</li>
+<ul>article
+    --aside
+    --details
+    --figcaption
+    --figure
+    --footer
+    --header
+    --main
+    --mark
+    --nav
+    --section
+    --summary
+    --time</ul>
+    <br>
+<h3>Q-4 Canvas and SVG tags. </h3>
+<li>-The HTML--canvas-- element is used to draw graphics, via JavaScript. The--canvas-- element is a container for graphics.</li>
+<ul>-difference between SVG and HTML5 Canvas:-</ul>
+<li>SVG	</li>
+    <ul>-SVG can be modified through script and CSS.</ul>
+   <ul> -SVG is vector based and composed of shapes.</ul>
+   <br>
+<li>	HTML Canvas</li>
+<br>
+   <ul> -Canvas can be modified through script only.</ul>
+  <ul>	-Canvas is raster based and composed of pixel.</ul>
+    
+
+    
+
+            
+        
+            
+            
+            
+        
+        
+        
+    
+
+
+
+
+
+    
+</body>
+</html>
