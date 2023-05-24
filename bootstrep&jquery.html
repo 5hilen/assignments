@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bootstrap cdn link -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <!-- bootstrap datepicker link -->
+
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css" />
+
+    <title>Date Interval Using JavaScript & Jquery</title>
+
+    <!-- jquery cdn link -->
+
+    <script src="https://code.jquery.com/jquery-3.6.3.js"
+        integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+
+    <style>
+        input[type="date"]::-webkit-calendar-picker-indicator {
+            display: none;
+            -webkit-appearance: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="row col-5">
+                <div class="container">
+                    <!-- Date pick FROM -->
+                    <div class="input-group mt-4">
+                        <label for="datetime1" class="col-1 me-3"><b>From:</b></label>
+                        <input class="form-control rounded-start" name="datetime1" type="text" data-provide="datepicker"
+                            id="startDate1" name="StartDate" placeholder="mm/dd/yyyy">
+                        <div class="input-group-text" id="basic-addon2" data-mdb-inline="true">&#x1F4C5;</div>
+                    </div>
+                    <!-- Date pick TO -->
+                    <div class="input-group mt-2">
+                        <label for="datetime2" class="col-1 me-3"><b>To:</b> &nbsp;</label>
+                        <input class="form-control rounded-start" name="datetime2" type="text" data-provide="datepicker"
+                            id="startDate2" name="StartDate" placeholder="mm/dd/yyyy">
+                        <div class="input-group-text" id="basic-addon2" data-mdb-inline="true">&#x1F4C5;</div>
+                    </div>
+                    <!-- Calculate button -->
+                    <div class="mt-2">
+                        <button type="button" class="btn btn-danger col-3 ms-5" onclick="calculate(this)"
+                            id="calculates">Calculate</button>
+                    </div>
+                </div>
+                <div class="bg-secondary mt-4 rounded-2">
+                    <div class="text-white fs-5 mt-1">Date Interval Between</div>
+                    <span id="date1" class="fs-5 text-white"></span>
+                    <span id="date2" class="fs-5 text-white"></span>
+                    <br>
+                    <hr class="border-white border-2">
+                    <div class="text-white fs-5" id="yearans">In years : </div>
+                    <div class="text-white fs-5" id="monthans">In months : </div>
+                    <div class="text-white fs-5" id="weekans">In weeks : </div>
+                    <div class="text-white fs-5" id="dayans">In days : </div>
+                    <hr class="border-white border-2">
+                    <br>
+                </div>
+
+                <script>
+                    $(document).ready(function () {
+                        let date1 = document.getElementById('startDate1');
+                        let date2 = document.getElementById('startDate2');
+
+                        // on click calculate button 
+                        $("#calculates").click(function () {
+                            document.getElementById('date1').innerText = date1.value + " and ";
+                            document.getElementById('date2').innerText = date2.value;
+
+                            caldate1 = new Date(date1.value);
+                            caldate2 = new Date(date2.value);
+                            var time = caldate1.getTime() - caldate2.getTime();
+
+                            // Calculate Days 
+                            var days = time / (1000 * 3600 * 24);
+                            document.getElementById("dayans").innerHTML = " In days : " + Math.round(Math.abs(days));
+
+                            // Calculate Weeks 
+                            var weeks = (days / 7);
+                            document.getElementById("weekans").innerHTML = " In weeks : " + Math.round(Math.abs(weeks));
+
+                            // Calculate Months 
+                            var months = (days / 30.5);
+                            document.getElementById("monthans").innerHTML = " In months : " + Math.round(Math.abs(months));
+
+                            // Calculate Years 
+                            var years = (months / 12);
+                            document.getElementById("yearans").innerHTML = " In years : " + Math.round(Math.abs(years));
+                        })
+                    })
+                </script>
+            </div>
+        </div>
+    </div>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+</body>
+
+</html>
